@@ -1,9 +1,9 @@
 import type { Message, Snowflake } from "discord.js";
 
-import type Event from "#types/Event";
 import type Rizu from "#classes/Rizu";
+import type RizuEvent from "#types/RizuEvent";
 
-export default class implements Event {
+export default class implements RizuEvent {
 	name = "messageCreate";
 
 	async run(client: Rizu, arg0: unknown): Promise<void> {

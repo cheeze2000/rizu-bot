@@ -1,11 +1,11 @@
 import { Client } from "discord.js";
 import type { ClientOptions } from "discord.js";
 
-import type Command from "#types/Command";
 import Logger from "#classes/Logger";
+import type RizuCommand from "#types/RizuCommand";
 
 export default class extends Client {
-	commands: Map<string, Command>;
+	commands: Map<string, RizuCommand>;
 	logger: Logger;
 
 	constructor(opts: ClientOptions) {

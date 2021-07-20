@@ -1,9 +1,9 @@
 import type { Interaction } from "discord.js";
 
-import type Command from "#types/Command";
 import type Rizu from "#classes/Rizu";
+import type RizuCommand from "#types/RizuCommand";
 
-export default class implements Command {
+export default class implements RizuCommand {
 	name = "echo";
 	description = "echoes the message back";
 	options = [
