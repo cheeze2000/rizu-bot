@@ -1,0 +1,34 @@
+{
+	"compilerOptions": {
+		// Type Checking
+		"noImplicitAny": true,
+		"strict": true,
+		"strictNullChecks": true,
+
+		// Modules
+		"baseUrl": "src",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"paths": {
+			"#classes/*": ["classes/*"],
+			"#handlers/*": ["handlers/*"],
+			"#responses/*": ["responses/*"],
+			"#types/*": ["types/*"],
+			"#utils/*": ["utils/*"]
+		},
+
+		// Emit
+		"outDir": "dist",
+
+		// Interop Constraints
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+
+		// Language and Environment
+		"target": "ES2020",
+
+		// Completeness
+		"skipLibCheck": true
+	},
+	"include": ["src/**/*.ts"]
+}

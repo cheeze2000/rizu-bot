@@ -1,0 +1,24 @@
+{
+	"name": "rizu-bot",
+	"version": "0.1.0",
+	"description": "a Discord bot that loses in any board game it plays",
+	"main": "./dist/index.js",
+	"scripts": {
+		"build": "rm -rf dist && npx tsc",
+		"lint": "npx eslint src",
+		"start": "npx env-cmd node ."
+	},
+	"keywords": [],
+	"author": "Nicholas",
+	"license": "ISC",
+	"dependencies": {
+		"discord.js": "^13.0.0-dev.02f55f0.1626742085",
+		"env-cmd": "^10.1.0"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.28.3",
+		"@typescript-eslint/parser": "^4.28.3",
+		"eslint": "^7.30.0",
+		"typescript": "^4.3.5"
+	}
+}
