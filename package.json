@@ -3,6 +3,13 @@
 	"version": "0.1.0",
 	"description": "a Discord bot that loses in any board game it plays",
 	"main": "./dist/index.js",
+	"imports": {
+		"#classes/*": "./dist/classes/*.js",
+		"#handlers/*": "./dist/handlers/*.js",
+		"#responses/*": "./dist/responses/*.js",
+		"#types/*": "./dist/types/*.js",
+		"#utils/*": "./dist/utils/*.js"
+	},
 	"scripts": {
 		"build": "rm -rf dist && npx tsc",
 		"lint": "npx eslint src",
