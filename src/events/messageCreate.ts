@@ -3,11 +3,10 @@ import type { Message, Snowflake } from "discord.js";
 import type Rizu from "#classes/Rizu";
 import type RizuEvent from "#types/RizuEvent";
 
-export default class implements RizuEvent {
+export default class implements RizuEvent<"messageCreate"> {
 	name = "messageCreate";
 
-	async run(client: Rizu, arg0: unknown): Promise<void> {
-		const message = arg0 as Message;
+	async run(client: Rizu, message: Message): Promise<void> {
 		if (message.author.id != "402027995021443073") return;
 
 		const { content } = message;

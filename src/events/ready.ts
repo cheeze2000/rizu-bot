@@ -1,7 +1,7 @@
 import type Rizu from "#classes/Rizu";
 import type RizuEvent from "#types/RizuEvent";
 
-export default class implements RizuEvent {
+export default class implements RizuEvent<"ready"> {
 	name = "ready";
 
 	async run(client: Rizu): Promise<void> {
