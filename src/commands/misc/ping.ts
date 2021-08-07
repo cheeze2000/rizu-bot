@@ -8,8 +8,8 @@ export default class implements RizuCommand {
 	description = "replies with pong";
 
 	async run(client: Rizu, interaction: Interaction): Promise<void> {
-		if (interaction.isCommand()) {
-			await interaction.reply("pong");
-		}
+		if (!interaction.isCommand()) return;
+
+		await interaction.reply("pong");
 	}
 }

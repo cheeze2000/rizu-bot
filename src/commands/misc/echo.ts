@@ -16,9 +16,9 @@ export default class implements RizuCommand {
 	];
 
 	async run(client: Rizu, interaction: Interaction): Promise<void> {
-		if (interaction.isCommand()) {
-			const message = interaction.options.getString("message");
-			await interaction.reply(message!);
-		}
+		if (!interaction.isCommand()) return;
+
+		const message = interaction.options.getString("message");
+		await interaction.reply(message!);
 	}
 }
