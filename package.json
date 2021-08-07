@@ -19,7 +19,7 @@
 	"author": "Nicholas",
 	"license": "ISC",
 	"dependencies": {
-		"discord.js": "^13.0.0-dev.02f55f0.1626742085",
+		"discord.js": "^13.0.0",
 		"env-cmd": "^10.1.0"
 	},
 	"devDependencies": {
