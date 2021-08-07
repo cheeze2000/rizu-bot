@@ -8,7 +8,6 @@ import handleEvents from "#handlers/event";
 const client = new Rizu({
 	intents: [
 		Intents.FLAGS.GUILDS,
-		Intents.FLAGS.GUILD_MEMBERS,
 		Intents.FLAGS.GUILD_MESSAGES
 	]
 });
